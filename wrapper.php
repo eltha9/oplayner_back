@@ -1,12 +1,13 @@
 <?php
     include 'database.php';
 
+    $result = new stdClass();
+    
     if(!empty($_POST))
     {
         echo '<pre>';
         var_dump($_POST);
         echo '<pre>';
-        $result = new stdClass();
 
         if(!empty($_POST['get']) && $_POST['get'] == 'true')
         {
